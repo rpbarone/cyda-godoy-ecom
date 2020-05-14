@@ -1,0 +1,36 @@
+.header {
+    height: 75px;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background-color: #262626;
+
+    .logo-container {
+        height: 100%;
+        width: 70px;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            background-image: url('../../assets/logo.jpg');
+            background-size: cover;
+        }
+    }
+
+    .options {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .option {
+            padding: 10px 15px;
+        }
+    }
+}
