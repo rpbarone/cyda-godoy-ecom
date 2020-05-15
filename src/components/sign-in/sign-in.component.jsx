@@ -3,6 +3,8 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
+import { signInWithFacebook } from '../../firebase/firebase.utils';
+
 import './sign-in.styles.scss';
 
 class SignIn extends React.Component {
@@ -52,7 +54,12 @@ class SignIn extends React.Component {
                     required
                     />
 
-                    <CustomButton type='submit'>Entrar</CustomButton>
+                    <div className='buttons'>
+                        <CustomButton type='submit'>Entrar</CustomButton>
+                        <CustomButton onClick={signInWithFacebook} isFacebookSignIn>
+                            Entrar com Facebook
+                        </CustomButton>
+                    </div>
                 </form>
             </div>
         )
