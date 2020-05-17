@@ -2,9 +2,9 @@ import React from 'react';
 
 import './custom-button.styles.scss';
 
-const CustomButton = ({isFacebookSignIn, children, ...otherProps}) => (
+const CustomButton = ({isFacebookSignIn, inverted, children, ...otherProps}) => (
     <button 
-        className={` ${isFacebookSignIn ? 'facebook-sign-in' : ''} custom-button`} 
+        className={` ${inverted ? 'inverted' : ''} custom-button`} 
         {...otherProps}
     >
         {children}
