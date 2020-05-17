@@ -4,7 +4,8 @@ import './custom-button.styles.scss';
 
 const CustomButton = ({isFacebookSignIn, inverted, children, ...otherProps}) => (
     <button 
-        className={` ${inverted ? 'inverted' : ''} custom-button`} 
+        className={` ${inverted ? 'inverted' : ''} 
+        ${isFacebookSignIn ? 'facebook-sign-in' : ''} custom-button`}
         {...otherProps}
     >
         {children}
