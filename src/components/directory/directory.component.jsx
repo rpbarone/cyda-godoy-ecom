@@ -1,78 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import MenuItem from '../menu-item/menu-item.component';
 
+import { selectDirectorySections } from '../../redux/directory/directory.selectors';
 import './directory.styles.scss';
 
-class Directory extends React.Component {
-    constructor() {
-        super();
+const Directory = ({ directory }) => (
+    <div className='directory-menu'>
+        {directory.map(({id, ...otherSectionProps}) => (
+            <MenuItem key={id} {...otherSectionProps} />
+        ))}
+    </div>
+)
+            
+const mapStateToProps = createStructuredSelector({
+    directory: selectDirectorySections
+})
 
-        this.state = {
-            sections: [
-                {
-                    title: 'banho de ervas',
-                    imageUrl: 'https://i.ibb.co/4J1SK7t/banhos-de-ervas.jpg',
-                    id: 1,
-                    linkUrl: 'banhos-de-ervas'
-                },
-                {
-                    title: 'fitoflorais',
-                    imageUrl: 'https://i.ibb.co/2MmJPvn/fitoflorais.png',
-                    id: 2,
-                    linkUrl: 'fitoflorais'
-                },
-                {
-                    title: 'elixir de cristais',
-                    imageUrl: 'https://i.ibb.co/hcCs7GL/elixir-de-cristais.png',
-                    id: 3,
-                    linkUrl: 'elixir-de-cristais'
-                },
-                {
-                    title: 'aromatizadores de ambiente',
-                    imageUrl: 'https://i.ibb.co/MMHQGLB/aromatizadores.jpg',
-                    id: 4,
-                    linkUrl: 'aromatizadores'
-                },
-                {
-                    title: 'gel de ervas',
-                    imageUrl: 'https://i.ibb.co/sJDZT6j/gel-de-ervas.jpg',
-                    id: 5,
-                    linkUrl: 'gel-de-ervas'
-                },
-                {
-                    title: 'óleo de ervas',
-                    imageUrl: 'https://i.ibb.co/5rNpLyB/oleos-de-ervas.jpg',
-                    id: 6,
-                    linkUrl: 'oleos-de-ervas'
-                },
-                {
-                    title: 'sabonetes dos orixás',
-                    imageUrl: 'https://i.ibb.co/1nTRZ3N/sabonetes.jpg',
-                    id: 7,
-                    size: 'large',
-                    linkUrl: 'sabonetes-dos-orixas'
-                },
-                {
-                    title: 'pulseiras',
-                    imageUrl: 'https://i.ibb.co/HYVdCpX/pulseiras.png',
-                    id: 8,
-                    size: 'large',
-                    linkUrl: 'pulseiras'
-                },
-            ]
-        }
-    }
-
-    render() {
-        return(
-            <div className='directory-menu'>
-                {this.state.sections.map(({id, ...otherSectionProps}) => (
-                    <MenuItem key={id} {...otherSectionProps} />
-                ))}
-            </div>
-        )
-    }
-}
-
-export default Directory;
+export default connect(mapStateToProps)(Directory);
