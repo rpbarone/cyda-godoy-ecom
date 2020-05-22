@@ -5,7 +5,7 @@ import './menu-item.styles.scss';
 
 const MenuItem = ({title, imageUrl, size, history, linkUrl, match }) => (
     <div
-     className={`${size} menu-item`}
+     className={`${size} menu-item flex`}
      onClick={() => history.push(`${match.url}${linkUrl}`)}
      >
         <div
@@ -15,9 +15,9 @@ const MenuItem = ({title, imageUrl, size, history, linkUrl, match }) => (
         }}
         />
 
-        <div className='content'>
-            <h1 className='title'>{title.toUpperCase()}</h1>
-            <span className='subtitle'>COMPRE AGORA</span>
+        <div className='content main-color-bg'>
+            <h1 className='title sh main-color-bg'>{title.toUpperCase()}</h1>
+            <span className='subtitle T main-color-bg'>LINHA DE PRODUTOS</span>
         </div>
     </div>
 )

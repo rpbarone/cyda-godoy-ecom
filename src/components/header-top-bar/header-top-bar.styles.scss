@@ -1,0 +1,25 @@
+@mixin icons {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 10px;
+}
+
+.top-bar {
+    max-height: 56px;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+
+    .contact {
+        .phone {
+            margin-right: 40px;
+        }
+    }
+
+    .account {
+        cursor: pointer;
+    }
+
+    .icon {
+        @include icons;
+    }
+}

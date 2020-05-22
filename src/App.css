@@ -1,13 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Open sans condensed';
-    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 300;
+    background: white;
+    color: #000000;
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-* {
-    box-sizing: border-box;
+    color: white;
 }

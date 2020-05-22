@@ -8,10 +8,13 @@ import { selectDirectorySections } from '../../redux/directory/directory.selecto
 import './directory.styles.scss';
 
 const Directory = ({ directory }) => (
-    <div className='directory-menu'>
-        {directory.map(({id, ...otherSectionProps}) => (
-            <MenuItem key={id} {...otherSectionProps} />
-        ))}
+    <div className='directory-menu block'>
+        <div className='directory-title hl sub-color'>PRINCIPAIS CATEGORIAS</div>
+        <div className='directory-items'>
+            {directory.map(({id, ...otherSectionProps}) => (
+                <MenuItem key={id} {...otherSectionProps} />
+            ))}
+        </div>
     </div>
 )
             

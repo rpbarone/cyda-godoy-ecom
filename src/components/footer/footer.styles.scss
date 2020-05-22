@@ -1,0 +1,111 @@
+@mixin socials {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@mixin title {
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 4px 0;
+}
+
+.bg {
+    width: 100%;
+    max-height: 450px;
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/05/55/shamanic-fractal-mandala-texture-ethno-style-vector-26480555.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    .footer {
+        width: 100%;
+        padding: 40px 5%;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: rgba(142, 174, 1, 0.95);
+    }
+
+    .contact, .links-uteis {
+        display: flex;
+        flex-direction: column;
+
+        .contact-group {
+            margin-top: 10px;
+        }
+
+        .title {
+            @include title();
+        }
+
+        .email, .phone-number, .cel-number {
+            color: white;
+        }
+
+        .contact-icon {
+            margin-right: 5px;
+        }
+    }
+
+    .search {
+        width: 360px;
+
+        .icon {
+            background-color: rgb(110, 134, 2);
+
+            &:hover {
+                background-color: #4B5C01;
+            }
+        }
+
+        &:first-child {
+            width: 100%;
+        }
+    }
+
+    a {
+       color: white;
+       margin-top: 10px;
+       
+       &:hover {
+           background-color: rgb(110, 134, 2);
+           border-radius: 5px;
+       }
+    }
+
+    .socials {
+
+        .title {
+            @include title();
+            margin-bottom: 10px;
+        }
+
+        .facebook {
+        @include socials();
+        background-image: url('../../assets/facebook.png');
+        }
+
+        .instagram {
+            @include socials();
+            background-image: url('../../assets/instagram.png');
+        }
+
+        .youtube {
+            @include socials();
+            background-image: url('../../assets/youtube.png');
+        }
+
+    }
+
+   
+}

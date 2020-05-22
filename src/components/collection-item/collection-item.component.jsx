@@ -18,9 +18,9 @@ const CollectionItem = ({ item, addItem }) => {
         }}
         />
 
-        <div className='collection-footer'>
+        <div className='collection-footer main-color-bg t'>
             <span className='name'>{name}</span>
-            <span className='price'>{price}</span>
+            <span className='price'>R$ {price}</span>
         </div>
         <CustomButton onClick={() => addItem(item)} inverted> ADICIONAR AO CARRINHO </CustomButton>
     </div> 

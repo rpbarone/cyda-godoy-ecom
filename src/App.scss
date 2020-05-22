@@ -1,0 +1,203 @@
+/* COLORS */
+$main-color: #8EAE01;
+$sub-color: #4B5C01;
+$less-important: rgba(22, 22, 22, 0.6);
+
+/* FONTS */
+$main-font: 'Rubik', sans-serif;
+$sub-font: 'Karla', sans-serif;
+
+@mixin block {
+    width: 100%;
+    padding: 15px 5%;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin hl {
+    font-family: $main-font;
+    font-size: 2.968em;
+    color: $sub-color;
+    font-weight: 500;  
+}
+
+@mixin h {
+    font-family: $main-font;
+    font-size: 2.375em;
+    color: $sub-color;
+    font-weight: 500;
+}
+
+@mixin hm {
+    font-family: $main-font;
+    font-size: 1.781em;
+    color: $sub-color;
+    font-weight: 500;
+}
+
+@mixin sh {
+    font-family: $main-font;
+    font-size: 1.25em;
+    color: $main-color;
+    font-weight: 400; 
+}
+
+@mixin shm {
+    font-family: $main-font;
+    font-size: .937em;
+    color: $main-color;
+    font-weight: 400;
+}
+
+@mixin t {
+    font-family: $sub-font;
+    font-size: 1em;
+    color: $less-important;
+    font-weight: 300;
+}
+
+@mixin tm {
+    font-family: $sub-font;
+    font-size: .75em;
+    color: $less-important;
+    font-weight: 300;
+}
+
+@mixin st {
+    font-family: $sub-font;
+    font-size: .75em;
+    color: $less-important;
+    font-weight: 300;
+}
+
+@mixin stm {
+    font-family: $sub-font;
+    font-size: 0.5625em;
+    color: $less-important;
+    font-weight: 300;
+}
+
+.block {
+    @include block();
+}
+
+.flex {
+    @include flex();
+}
+
+.hl {
+    @include hl();
+}
+
+.h {
+    @include h();
+}
+
+.sh {
+    @include sh();
+}
+
+
+.t {
+    @include t();
+}
+
+.tm {
+    @include tm();
+}
+
+.st {
+    @include st();
+}
+
+.stm {
+    @include stm();
+}
+
+
+
+
+
+/* LINKS */
+@mixin link {
+    color: $sub-color;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    @include link();
+
+    &:hover {
+        color: $less-important;
+    }
+}
+
+/************************/
+
+.main-color {
+    color: $main-color;
+}
+
+.sub-color {
+    color: $sub-color;
+}
+
+.less-important {
+    color: $less-important;
+}
+
+.main-color-bg {
+    background: $main-color;
+    color: white;
+}
+
+.sub-color-bg {
+    background: $sub-color;
+    color: white;
+}
+
+.less-bg {
+    background-color: $less-important;
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+
+/* HOVER EFFECTS */ 
+
+.und-effect {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.und-effect:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: $main-color;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.und-effect:hover:before, .und-effect:focus:before, .und-effect:active:before {
+  right: 0;
+}

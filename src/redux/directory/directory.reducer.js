@@ -1,56 +1,48 @@
+import banhos from '../../assets/category/banhos.png';
+import fitoflorais from '../../assets/category/florais.jfif';
+import aromatizadores from '../../assets/category/aromatizadores.jfif';
+import sabonetes from '../../assets/category/sabonetes.jfif';
 
 const INITIAL_STATE = {
     sections: [
         {
-            title: 'banho de ervas',
-            imageUrl: 'https://i.ibb.co/4J1SK7t/banhos-de-ervas.jpg',
+            title: 'banhos de ervas',
+            imageUrl: banhos,
             id: 1,
             linkUrl: 'banhos-de-ervas'
         },
         {
-            title: 'fitoflorais',
-            imageUrl: 'https://i.ibb.co/2MmJPvn/fitoflorais.png',
+            title: 'fitoflorais xamânicos',
+            imageUrl: aromatizadores,
             id: 2,
             linkUrl: 'fitoflorais'
         },
         {
             title: 'elixir de cristais',
-            imageUrl: 'https://i.ibb.co/hcCs7GL/elixir-de-cristais.png',
+            imageUrl: banhos,
             id: 3,
             linkUrl: 'elixir-de-cristais'
         },
         {
             title: 'aromatizadores de ambiente',
-            imageUrl: 'https://i.ibb.co/MMHQGLB/aromatizadores.jpg',
+            imageUrl: aromatizadores,
             id: 4,
             linkUrl: 'aromatizadores'
         },
         {
-            title: 'gel de ervas',
-            imageUrl: 'https://i.ibb.co/sJDZT6j/gel-de-ervas.jpg',
-            id: 5,
-            linkUrl: 'gel-de-ervas'
-        },
-        {
-            title: 'óleo de ervas',
-            imageUrl: 'https://i.ibb.co/5rNpLyB/oleos-de-ervas.jpg',
-            id: 6,
-            linkUrl: 'oleos-de-ervas'
-        },
-        {
             title: 'sabonetes dos orixás',
-            imageUrl: 'https://i.ibb.co/1nTRZ3N/sabonetes.jpg',
-            id: 7,
-            size: 'large',
+            imageUrl: banhos,
+            id: 5,
+            size: '',
             linkUrl: 'sabonetes-dos-orixas'
         },
         {
-            title: 'pulseiras',
-            imageUrl: 'https://i.ibb.co/HYVdCpX/pulseiras.png',
-            id: 8,
-            size: 'large',
-            linkUrl: 'pulseiras'
-        },
+            title: 'fitoflorais infantis',
+            imageUrl: aromatizadores,
+            id: 6,
+            size: '',
+            linkUrl: 'fitoflorais-infantis'
+        }
     ]
 }
 
