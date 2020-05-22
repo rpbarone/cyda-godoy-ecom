@@ -1,7 +1,7 @@
 .custom-button {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Karla', sans-serif;
     min-width: 180px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     width: auto;
     padding: 0 1.2%;
@@ -19,17 +19,17 @@
 
     &:hover, &:active {
         transition: 0.3s;
-        box-shadow: inset 20em 0 0 0 #8EAE01;
+        box-shadow: inset 24em 0 0 0 #8EAE01;
         background: linear-gradient(270deg,#4B5C01, #8EAE01 96%);
     }
     
     &.facebook-sign-in {
-        background: #3b5998;
+        background: rgb(24, 119, 242);
         color: white;
     
         &:hover {
             box-shadow: none;
-            background: #8b9dc3;
+            background: rgba(24, 119, 242, 0.7);
             border: none;
             color: white;
         }    

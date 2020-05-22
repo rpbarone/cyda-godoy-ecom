@@ -1,5 +1,6 @@
 .sign-in {
-    width: 380px;
+    width: 360px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
 
@@ -9,6 +10,14 @@
 
     .buttons {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .facebook-sign-in {
+        margin-top: .675em;
+    }
+
+    .sh {
+        margin-bottom: .475em;
     }
 }

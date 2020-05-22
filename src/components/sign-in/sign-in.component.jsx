@@ -26,7 +26,7 @@ class SignIn extends React.Component {
             await auth.signInWithEmailAndPassword(email, password)
             this.setState({ email: '', password: ''});
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     };
 
@@ -39,8 +39,8 @@ class SignIn extends React.Component {
     render() {
         return(
             <div className='sign-in'>
-                <h2>Já tenho uma conta</h2>
-                <span>Entre inserindo seu e-mail e senha</span>
+                <h2 className='sh sub-color'>JÁ TENHO UMA CONTA</h2>
+                <span className='t less-important-color'>Entre inserindo seu e-mail e senha.</span>
 
                 <form onSubmit={this.handleSubmit}>
                     <FormInput
