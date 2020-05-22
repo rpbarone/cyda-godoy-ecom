@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
-import { ReactComponent as SmartphoneIcon } from '../../assets/smartphone.svg';
-import { ReactComponent as EmailIcon } from '../../assets/email.svg';
+import { ReactComponent as PhoneIcon } from '../../assets/icons/phone.svg';
+import { ReactComponent as SmartphoneIcon } from '../../assets/icons/smartphone.svg';
+import { ReactComponent as EmailIcon } from '../../assets/icons/email.svg';
 
 import SearchInput from '../../components/SearchInput/search-input.component';
 

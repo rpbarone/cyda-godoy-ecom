@@ -92,17 +92,17 @@
 
         .facebook {
         @include socials();
-        background-image: url('../../assets/facebook.png');
+        background-image: url('../../assets/icons/facebook.png');
         }
 
         .instagram {
             @include socials();
-            background-image: url('../../assets/instagram.png');
+            background-image: url('../../assets/icons/instagram.png');
         }
 
         .youtube {
             @include socials();
-            background-image: url('../../assets/youtube.png');
+            background-image: url('../../assets/icons/youtube.png');
         }
 
     }

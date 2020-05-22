@@ -2,6 +2,7 @@ import React from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+import AlertError from '../alert-error/alert-error.component';
 
 import { auth, signInWithFacebook } from '../../firebase/firebase.utils';
 
@@ -13,7 +14,8 @@ class SignIn extends React.Component {
 
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            error: false
         };
     }
 
@@ -26,9 +28,9 @@ class SignIn extends React.Component {
             await auth.signInWithEmailAndPassword(email, password)
             this.setState({ email: '', password: ''});
         } catch (error) {
-            console.log(error);
+            this.setState({ error: true })
         }
-    };
+    }
 
     handleChange = event => {
         const { value, name } = event.target;
@@ -67,6 +69,13 @@ class SignIn extends React.Component {
                             Entrar com Facebook
                         </CustomButton>
                     </div>
+
+                    {
+                        this.state.error ?
+                        <AlertError msgError='E-mail ou senha inválidos.' />
+                        :
+                        null
+                    }
                 </form>
             </div>
         )

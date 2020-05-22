@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
 
-import { ReactComponent as ShoppingBag } from '../../assets/shopping-bag.svg'
+import { ReactComponent as ShoppingBag } from '../../assets/icons/shopping-bag.svg'
 
 import { selectCartItems, selectCartTotal, selectItemCount } from '../../redux/cart/cart.selectors';
 import { toggleCartHidden } from '../../redux/cart/cart.actions';

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { ReactComponent as User } from '../../assets/user.svg';
-import { ReactComponent as Exit } from '../../assets/exit.svg';
-import { ReactComponent as Phone } from '../../assets/phone.svg';
-import { ReactComponent as Email } from '../../assets/email.svg';
+import { ReactComponent as User } from '../../assets/icons/user.svg';
+import { ReactComponent as Exit } from '../../assets/icons/exit.svg';
+import { ReactComponent as Phone } from '../../assets/icons/phone.svg';
+import { ReactComponent as Email } from '../../assets/icons/email.svg';
 
 
 
