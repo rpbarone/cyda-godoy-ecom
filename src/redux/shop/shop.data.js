@@ -1,6 +1,6 @@
 
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+ banhos: {
     id: 1,
     title: 'banhos de ervas',
     routeName: 'banhos-de-ervas',
@@ -43,7 +43,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  fitoflorais: {
     id: 2,
     title: 'fitoflorais xamânicos',
     routeName: 'fitoflorais',
@@ -176,7 +176,7 @@ const SHOP_DATA = [
       },
     ]
   },
-  {
+  elixir: {
     id: 3,
     title: 'elixir de cristais',
     routeName: 'elixir-de-cristais',
@@ -267,7 +267,7 @@ const SHOP_DATA = [
       },
     ]
   },
-  {
+  aromatizadores: {
     id: 4,
     title: 'aromatizadores de ambiente',
     routeName: 'aromatizadores',
@@ -298,7 +298,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  sabonetes: {
     id: 5,
     title: 'sabonetes dos orixás',
     routeName: 'sabonetes',
@@ -371,10 +371,10 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  curumim: {
     id: 6,
     title: 'fitoflorais infantis',
-    routeName: 'fitoflorais-infantis',
+    routeName: 'curumim-fitoflorais-infantis',
     items: [
       {
         id: 57,
@@ -456,6 +456,6 @@ const SHOP_DATA = [
       },
     ]
   }
-];
+};
 
 export default SHOP_DATA;
