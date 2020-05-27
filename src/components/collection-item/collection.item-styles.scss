@@ -56,6 +56,11 @@
             width: 100%;
             border: 0;
 
+            &:hover, &:active {
+                outline: 0;
+                border: 0;
+            }
+
             &:last-child {
                 border-radius: 0 0 5px 5px;
                 height: 40px;
