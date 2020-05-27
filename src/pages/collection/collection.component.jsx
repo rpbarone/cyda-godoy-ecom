@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import './collection.styles.scss';
@@ -8,13 +8,22 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 
 const CollectionPage = ({ collection }) => {
     const { items, title } = collection;
+    
+    useEffect(() => {
+        window.scrollTo({
+            top: 288,
+            left: 0,
+            behavior: 'smooth'
+          });
+      }, [])
+      
 
 return (
     <div className='collection-page'>
-        <h1 className='title h'>{ title.toUpperCase() }</h1>
+        <span className='title h'>{ title.toUpperCase() }</span>
         <div className='items'>
             {
-                items.map(item => <CollectionItem key={item.id} item={item} />)
+                Object.values(items).map(item => <CollectionItem key={item.id} item={item} />)
             }
         </div>
     </div>
@@ -23,7 +32,6 @@ return (
 }
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(ownProps)
     return {
     collection: selectCollection(ownProps.match.params.collectionId.match(/\w+/)[0])(state)
 }};

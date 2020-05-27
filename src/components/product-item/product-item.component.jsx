@@ -4,13 +4,22 @@ import './product-item.styles.scss';
 
 import CustomButton from '../custom-button/custom-button.component';
 
-const ProductItem = () => (
+
+const ProductItem = ({ itemCollection }) => {
+
+const { name, price, imageUrl } = itemCollection;
+
+return (
     <div className='product-item block'>
         <div className='content'>
-            <div className='image'></div>
+            <div
+            style={{
+                backgroundImage: `url(${ imageUrl })`
+            }}
+            className='image' />
             <div className='info'>
-                <div className='name h'>Fitofloral de Alegria</div>
-                <div className='price sh'>R$ 44,00</div>
+                <div className='name h'>{ name }</div>
+                <div className='price sh'>R$ { price },00</div>
                 <div className='quantity'>
                     <label for='qtd' className='t'>Quantidade: </label>
                     <input className='t' type='number' min='1' max='20' />
@@ -55,5 +64,7 @@ const ProductItem = () => (
         </div>
     </div>
 );
+}
+
 
 export default ProductItem;

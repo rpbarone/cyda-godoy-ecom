@@ -12,7 +12,7 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
-import ProductItem from './components/product-item/product-item.component';
+import ProductPage from './pages/product/product.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
@@ -50,13 +50,14 @@ class App extends React.Component {
   }
 
   render() {
+
     return(
       <div className='App'>
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/produtos' component={ShopPage} />
-          <Route exact path='/product-page' component={ProductItem} />
+          <Route path={`/produto/:categoryId/:productId`} component={ProductPage} />
           <Route exact path='/finalizar-compra' component={CheckoutPage} />
           <Route exact path='/login' render={() => this.props.currentUser ? (
             <Redirect to='/' />
@@ -72,7 +73,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
 })
 
 const mapDispatchToProps = dispatch => ({
