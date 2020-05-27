@@ -48,6 +48,7 @@
 
     .collection-footer {
         width: 100%;
+        height: auto;
         border-radius: 5px;
 
         .custom-button {
@@ -55,6 +56,8 @@
             border-radius: 0;
             width: 100%;
             border: 0;
+            display: flex;
+            align-items: center;
 
             &:last-child {
                 border-radius: 0 0 5px 5px;
