@@ -25,3 +25,17 @@ export const selectCollectionItems = collectionUrlParam => itemUrlParam => creat
         return items[itemUrlParam]
     }
 );
+
+export const selectItemsFromAllCollections = createSelector(
+    [selectCollections],
+    collection => {
+        return [
+            collection.banhos.items,
+            collection.elixir.items,
+            collection.fitoflorais.items,
+            collection.sabonetes.items,
+            collection.aromatizadores.items,
+            collection.curumim.items
+        ]
+    }
+)

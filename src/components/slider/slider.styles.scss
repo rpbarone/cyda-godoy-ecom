@@ -1,0 +1,38 @@
+.slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: transparent;
+
+    .slide {
+        height: 100%;
+        transition: .5s;
+        margin-right: 60px;
+        position: relative;
+        left: 10%;
+    }
+    
+}
+
+@mixin btn-styles {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: white;
+    border: 0;
+    outline: 0;
+    font-size: 4em;
+}
+
+#goLeft {
+    left: 0;
+    @include btn-styles;
+}
+
+#goRight {
+    right: 0;
+    @include btn-styles;
+}
