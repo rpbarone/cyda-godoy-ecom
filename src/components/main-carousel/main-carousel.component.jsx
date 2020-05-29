@@ -8,33 +8,32 @@ import './main-carousel.styles.scss';
 
 const MainCarousel = () => (
     <div className='main-carousel'>
-        <Slider slideWidth={100} slideQtd={1} interval={999999}>
-            <Banner 
-            title={'1'} 
-            subtitle={'3 FLORAIS'} 
-            description={'de R$132,00'} 
-            description_2={'por R$120,00'}
-            imageUrl={'https://i.ibb.co/fS2f6HL/espaco1.jpg'}
+        <Slider slideWidth={100} slideQtd={1} interval={8000}>
+            <Banner
+            type={'Agenda'}
+            title={'ATENDIMENTO XAMÂNICO'} 
+            subtitle={'Benzimento com Ervas, Cirurgia Espiritual, Apometria e Consulta com o Xamã'} 
+            description={'Atendimento completo por apenas R$44,00'}
+            btnAgenda={'CLIQUE AQUI PARA SABER AS DATAS'}
+            imageUrl={'https://i.ibb.co/wdN7Mv2/cyda.jpg'}
             />
             <Banner 
-            title={'2'} 
-            subtitle={'heyyyy'} 
-            description={'asisso'} 
-            description_2={'ahsduiashduas'}
-            imageUrl={'https://i.ibb.co/QfV0fzz/espaco2.jpg'}
+            type={'KIT'}
+            title={'LIMPEZA DOS CHACKRAS'} 
+            subtitle={'01 Fitofloral Limpeza dos Chackras + 02 Banhos de Limpeza'} 
+            scratchInfo={'de R$94,00'} 
+            description_2={'por R$85,00'}
+            btnOffer={'CLIQUE AQUI PARA COMPRAR'}
+            imageUrl={'https://www.cristaisaquarius.com.br/blog/wp-content/uploads/2018/07/Signs-you-need-to-align-your-chakras-640x360.jpg'}
             />
             <Banner 
-            title={'3'} 
-            subtitle={'heyyyy'} 
-            description={'asisso'} 
-            description_2={'ahsduiashduas'}
-            imageUrl={'https://i.ibb.co/cvDmBZB/espaco4.jpg'} />
-            <Banner 
-            title={'4'} 
-            subtitle={'heyyyy'} 
-            description={'asisso'} 
-            description_2={'ahsduiashduas'}
-            imageUrl={'https://i.ibb.co/TcyX3H5/espaco3.jpg'} />
+            type={'Agenda'}
+            title={'ATENDIMENTO EXU MARABÔ'} 
+            subtitle={'Cirurgia Espiritual e Trabalhos de Cura'} 
+            description={'Atendimento completo por apenas R$44,00'}
+            btnAgenda={'CLIQUE AQUI PARA SABER AS DATAS'}
+            imageUrl={'https://i.ibb.co/NWCMwJp/exu-1.jpg'}
+            />
         </Slider>
     </div>
 );

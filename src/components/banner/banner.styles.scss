@@ -19,33 +19,41 @@
 
         .content {
             @include position();
-            background-color: rgba(142, 174, 1, 0.8);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            width: 250px;
-            height: 250px;
-            padding: 15px;
-            border-radius: 50%;
+            background-color: rgba(142, 174, 1, 0.8);
+            min-height: 270px;
+            width: 440px;
+            padding: 25px;
+            border-radius: 5px;
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
-            .title, .subtitle, .type {
+            .title, .subtitle, .type, .description {
                 color: white;
-                font-weight: 500;
             }
 
-            .description {
+            .subtitle, .description {
+                margin-top: 12px;
+            }
+
+            .scratch {
                 color: white;
-                margin-top: 15px;
+                margin-top: 12px;
+                margin-bottom: -12px;
                 text-decoration: line-through;
-                margin-bottom: -10px;
             }
 
             .description:last-child {
                 font-weight: 500;
-                text-decoration: none;
             }
+
+            .custom-button {
+                width: 80%;
+                margin: 15px auto;
+            }
+
+            
         }
 }
