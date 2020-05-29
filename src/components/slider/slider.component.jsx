@@ -2,24 +2,54 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-
-import CollectionItem from '../collection-item/collection-item.component';
-
-import { selectCollections, selectItemsFromAllCollections } from '../../redux/shop/shop.selectors';
+import { selectCollections } from '../../redux/shop/shop.selectors';
 import './slider.styles.scss';
 
 const Slider = (props) => {
-    const [x, setX] = useState(0);
+    let [x, setX] = useState(0);
 
     let sliderData = [props.children].flat();
-    
-    const goLeft = () => {
-        x === 0 ? setX(-85 * (sliderData.length - 1)) : setX(x + 85);
+
+    const goAuto = () => {
+        
+        if (x === -props.slideWidth * (sliderData.length - props.slideQtd)) {
+            setX(0);
+            clearInterval(interval)
+           } else {
+           setX(x - props.slideWidth);
+           clearInterval(interval)
+           }
+           
     }
 
-    const goRight = () => {
-        x === -85 * (sliderData.length - 1) ? setX(0) : setX(x - 85);
-    }
+    let interval = setInterval(goAuto, props.interval);
+
+
+            const goLeft = () => {
+                clearInterval(interval);
+
+                if (x === 0) { 
+                    clearInterval(interval);
+                    setX(-props.slideWidth * (sliderData.length - props.slideQtd))
+        
+                } else {
+                    clearInterval(interval);
+                    setX(x + props.slideWidth);
+                }
+                
+            }
+        
+            const goRight = () => {
+                if (x === -props.slideWidth * (sliderData.length - props.slideQtd)) {
+                    clearInterval(interval);
+                     setX(0);
+                    } else {
+                    clearInterval(interval);
+                    setX(x - props.slideWidth);
+                    }
+            }
+
+        
 
 
     return(
@@ -32,8 +62,8 @@ const Slider = (props) => {
                 
             ))
         }
-        <button id="goLeft" onClick={goLeft}>&#10092;</button>
-        <button id="goRight" onClick={goRight}>&#10093;</button>
+        <button id="goLeft" className='sub-color-bg' onClick={goLeft}>&#10094;</button>
+        <button id="goRight" className='sub-color-bg' onClick={goRight}>&#10095;</button>
         </div>
     )
 };

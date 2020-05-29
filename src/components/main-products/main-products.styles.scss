@@ -6,4 +6,18 @@
     .title {
         margin: 40px auto 20px auto;
     }
+
+   .collection-item {
+       margin-right: 60px;
+   }
+
+   #goRight {
+       right: 3.5%;
+       border-radius: 5px;
+   }
+
+   #goLeft {
+       left: 3.5%;
+       border-radius: 5px;
+   }
 }
