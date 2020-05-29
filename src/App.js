@@ -13,6 +13,7 @@ import Footer from './components/footer/footer.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import ProductPage from './pages/product/product.component';
+import Agenda from './pages/agenda/agenda.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
@@ -59,6 +60,7 @@ class App extends React.Component {
           <Route path='/produtos' component={ShopPage} />
           <Route path={`/produto/:categoryId/:productId`} component={ProductPage} />
           <Route exact path='/finalizar-compra' component={CheckoutPage} />
+          <Route exact path='/agenda' component={Agenda} />
           <Route exact path='/login' render={() => this.props.currentUser ? (
             <Redirect to='/' />
             ) : (
