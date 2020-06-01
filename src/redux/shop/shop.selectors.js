@@ -38,4 +38,4 @@ export const selectItemsFromAllCollections = createSelector(
             collection.curumim.items
         ]
     }
-)
+);
