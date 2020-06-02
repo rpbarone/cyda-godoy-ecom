@@ -1,16 +1,3 @@
-@mixin socials {
-    width: 36px;
-    height: 36px;
-    margin: 0 10px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
 @mixin title {
     color: white;
     border-bottom: 1px solid white;
@@ -88,21 +75,6 @@
         .title {
             @include title();
             margin-bottom: 10px;
-        }
-
-        .facebook {
-        @include socials();
-        background-image: url('../../assets/icons/facebook.png');
-        }
-
-        .instagram {
-            @include socials();
-            background-image: url('../../assets/icons/instagram.png');
-        }
-
-        .youtube {
-            @include socials();
-            background-image: url('../../assets/icons/youtube.png');
         }
 
     }

@@ -6,6 +6,7 @@ import { ReactComponent as SmartphoneIcon } from '../../assets/icons/smartphone.
 import { ReactComponent as EmailIcon } from '../../assets/icons/email.svg';
 
 import SearchInput from '../../components/SearchInput/search-input.component';
+import SocialLinks from '../../components/social-links/social-links.component';
 
 import './footer.styles.scss';
 
@@ -47,11 +48,7 @@ const Footer = () => (
 
     <div className='socials'>
         <div className='sh title'>ACOMPANHE-NOS NAS REDES SOCIAIS</div>
-            <div className='socials-icons flex'>
-                <div className='facebook'/>
-                <div className='instagram' />
-                <div className='youtube' />
-            </div>
+        <SocialLinks />    
     </div>
 
 

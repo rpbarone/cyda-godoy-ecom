@@ -8,6 +8,8 @@ const SHOP_DATA = {
         id: 1,
         name: 'Banho Atrativo',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
+        tag: 'mais atração',
         route: 'banho-atrativo',
         imageUrl: 'https://i.ibb.co/MkwxqR0/banho-atrativo.jpg',
         price: 25
@@ -16,6 +18,12 @@ const SHOP_DATA = {
         id: 2,
         name: 'Banho Energético',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
+        tags: [
+          '+ energia',
+          '+ vitalidade',
+          '+ disposição'
+        ],
         route: 'banho-energetico',
         imageUrl: 'https://i.ibb.co/NKbwdMm/banho-energetico.jpg',
         price: 25
@@ -24,6 +32,7 @@ const SHOP_DATA = {
         id: 3,
         name: 'Banho Intuição',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-intuicao',
         imageUrl: 'https://i.ibb.co/LrzpFtG/banho-intui-ao.jpg',
         price: 25
@@ -32,6 +41,7 @@ const SHOP_DATA = {
         id: 4,
         name: 'Banho Limpeza',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-limpeza',
         imageUrl: 'https://i.ibb.co/1n7XX4P/banho-limpeza.jpg',
         price: 25
@@ -40,6 +50,7 @@ const SHOP_DATA = {
         id: 5,
         name: 'Banho Sete Ervas',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-sete-ervas',
         imageUrl: 'https://i.ibb.co/df5ddTZ/banho-sete-ervas.jpg',
         price: 25
@@ -48,6 +59,7 @@ const SHOP_DATA = {
         id: 6,
         name: 'Banho Stress',
         category: 'banhos',
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-stress',
         imageUrl: 'https://i.ibb.co/Lzbghk2/banho-stress.jpg',
         price: 25

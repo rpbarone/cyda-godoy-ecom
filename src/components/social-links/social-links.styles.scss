@@ -1,0 +1,29 @@
+@mixin socials {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.social-links {
+    .facebook {
+        @include socials();
+        background-image: url('../../assets/icons/facebook.png');
+        }
+    
+        .instagram {
+            @include socials();
+            background-image: url('../../assets/icons/instagram.png');
+        }
+    
+        .youtube {
+            @include socials();
+            background-image: url('../../assets/icons/youtube.png');
+    }
+}

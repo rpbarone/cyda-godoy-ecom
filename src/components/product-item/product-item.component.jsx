@@ -1,68 +1,142 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {
+    EmailShareButton,
+    FacebookShareButton,
+    PinterestShareButton,
+    TelegramShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+  } from "react-share";
 
-import './product-item.styles.scss';
+  import {
+    EmailIcon,
+    FacebookIcon,
+    PinterestIcon,
+    TelegramIcon,
+    TwitterIcon,
+    WhatsappIcon,
+  } from "react-share";
 
 import CustomButton from '../custom-button/custom-button.component';
 
+import './product-item.styles.scss';
 
 const ProductItem = ({ itemCollection }) => {
 
-const { name, price, imageUrl } = itemCollection;
+const { name, price, imageUrl, 
+    category, collectionRoute, tags } = itemCollection;
 
 return (
-    <div className='product-item block'>
-        <div className='content'>
-            <div
+   <div className='product-item block'>
+        <div className='item'>
+            <div 
             style={{
                 backgroundImage: `url(${ imageUrl })`
             }}
-            className='image' />
-            <div className='info'>
-                <div className='name h'>{ name }</div>
-                <div className='price sh'>R$ { price },00</div>
-                <div className='quantity'>
-                    <label for='qtd' className='t'>Quantidade: </label>
-                    <input className='t' type='number' min='1' max='20' />
-            </div>
-                <div className='buttons'>
-                    <CustomButton>ADICIONAR AO CARRINHO</CustomButton>
+            className='product-image' />
+            <div className='infos'>
+                <h1 className='title h'>{ name }</h1>
+                <h3 className='price sh'>R${ price },00</h3>
+                <div className='divider'></div>
+                <div className='description t'>Lorem ipsum lorem ipsum 
+                Lorem ipsum lorem ipsumLorem ipsum lorem Lorem ipsum 
+                lorem ipsumLorem ipsum lorem ipsum ipsum Lorem ipsum lorem
+                psumLorem ipsum lorem ipsum Lorem ipsum lorem ipsumLorem ipsum 
+                lorem ipsumLorem ipsum lorem ipsum Lorem ipsum lorem ipsumLorem 
+                ipsum lorem ipsumLorem ipsum lorem ipsum Lorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsum</div>
+                <span className='stock sh'>&#10004; Em estoque</span>
+                <div className='add-to-cart'>
+                    <div className='quantity'>
+                        <label for='quantity' className='t'>Quantidade:</label>
+                        <input id='quantity' type='number'
+                        className='t qtd' min='1' max='20' />
+                    </div>
+                    <div className='buttons'>
+                    <CustomButton inverted>Adicionar ao Carrinho</CustomButton>
                     <CustomButton>COMPRAR AGORA</CustomButton>
-                </div>
-
-                <div className='pagseguro'></div>
-
-                <div className='frete'>
-                    <span className='t'>Calcule o Frete e Tempo de entrega</span>
-                    <div className='calc flex'>
-                        <input type='text' />
-                        <CustomButton>Calcular</CustomButton>
                     </div>
                 </div>
+                <div className='divider'></div>
+                <div className='links t'>
+                    <span className='flex category'>Categoria: 
+                    <Link to={`${collectionRoute}`} className='st badge less-bg'>
+                    { category }</Link>
+                    </span>
+                    <span className='flex'>Benefícios: 
+                    {
+                        tags.map(tag => (
+                            <span to='#' className='st badge less-bg'>
+                            { tag }</span>
+                        ))
+                    }
+                    </span>  
+                </div>
+                <div className='socials'>
+                    <WhatsappShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <WhatsappIcon size={28} round={true} />
+                    </WhatsappShareButton>
+                    <FacebookShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <FacebookIcon size={28} round={true} />
+                    </FacebookShareButton>
+                    <TwitterShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <TwitterIcon size={28} round={true} />
+                    </TwitterShareButton>
+                    <PinterestShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <PinterestIcon size={28} round={true} />
+                    </PinterestShareButton>
+                    <TelegramShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <TelegramIcon size={28} round={true} />
+                    </TelegramShareButton>
+                    <EmailShareButton
+                    url={'https://www.facebook.com/espacocydagodoy'}
+                    className='share'
+                    >
+                        <EmailIcon size={28} round={true} />
+                    </EmailShareButton>
+                    
+                </div>
             </div>
         </div>
 
-        <div className='product-description flex'>
-                <ul className='description-menu t main-color-bg'>
-                    <li className=''>Descrição</li>
-                    <li className=''>Modo de uso</li>
-                    <li>Conservação</li>
-                </ul>
-
-                <div className='description-content t'>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non quam varius, 
-                    bibendum nisl sed, vulputate felis. Donec cursus consequat lorem vitae vulputate. 
-                    Sed vel gravida sapien. Ut iaculis lacus eu efficitur imperdiet. Quisque bibendum 
-                    enim diam, eu consequat erat pharetra nec. Donec suscipit gravida quam, id tristique leo 
-                    faucibus vitae. Donec ultricies porta magna quis laoreet. Quisque tincidunt posuere ante, 
-                    a imperdiet nulla cursus eget. Sed tincidunt tortor libero, mattis efficitur neque luctus eu. 
-                    Mauris pellentesque malesuada ligula, quis mattis ligula condimentum vitae. Pellentesque a 
-                    arcu mauris. Morbi id eros felis. Donec purus justo, ullamcorper ut risus quis,
-                    accumsan gravida urna. Integer gravida odio urna, ornare fermentum nisi dapibus gravida.
-                    </p>
-                </div>
+        <div className='product-details'>
+            <div className='menu-details'>
+                <span className='title h und-effect'>DESCRIÇÃO</span>
+                <span className='title h und-effect'>FORMAS DE PAGAMENTO</span>
+                <span className='title h und-effect'>PRAZOS DE ENTREGA</span>
+            </div>
+            <div className='description-content t'>
+                ipsum ipsum Lorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                ipsum ipsum Lorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                ipsum ipsum Lorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+                Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum
+            </div>
         </div>
-    </div>
+   </div> 
 );
 }
 
