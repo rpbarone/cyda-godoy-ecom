@@ -936,7 +936,7 @@ const SHOP_DATA = {
           '+ energia',
           '+ vitalidade',
           '+ disposição'
-        ],
+      ],
         route: 'fitofloral-infantil-sos',
         imageUrl: 'https://i.ibb.co/BCqvpQp/fitofloral-infantil-sos.jpg',
         price: 44
