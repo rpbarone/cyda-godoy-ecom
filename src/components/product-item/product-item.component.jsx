@@ -49,8 +49,8 @@ return (
                 <span className='stock sh'>&#10004; Em estoque</span>
                 <div className='add-to-cart'>
                     <div className='quantity'>
-                        <label for='quantity' className='t'>Quantidade:</label>
-                        <input id='quantity' type='number'
+                        <label className='t'>Quantidade:</label>
+                        <input type='number'
                         className='t qtd' min='1' max='20' />
                     </div>
                     <div className='buttons'>
@@ -66,8 +66,8 @@ return (
                     </span>
                     <span className='flex'>Benefícios: 
                     {
-                        tags.map(tag => (
-                            <span to='#' className='st badge less-bg'>
+                        tags.map((tag, id) => (
+                            <span key={id} to='#' className='st badge less-bg'>
                             { tag }</span>
                         ))
                     }

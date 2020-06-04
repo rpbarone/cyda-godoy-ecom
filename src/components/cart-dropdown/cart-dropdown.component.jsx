@@ -17,7 +17,7 @@ const CartDropdown = ({ cartItems, history, dispatch, total, itemCount }) => (
     <div className='cart-dropdown white-bg'>
         <div className='cart-header flex'>
         <div className='cart-quantity flex'>
-            <ShoppingBag class='shopping-icon' />
+            <ShoppingBag className='shopping-icon' />
             <span className="badge st main-color-bg">{ itemCount }</span>
         </div>
             

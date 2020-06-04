@@ -69,7 +69,7 @@ const Slider = (props) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-    collection: selectCollections,
+    collection: selectCollections
 })
 
 export default connect(mapStateToProps)(Slider);
