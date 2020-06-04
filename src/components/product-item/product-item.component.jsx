@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { Link, withRouter } from 'react-router-dom';
 import {
     EmailShareButton,
     FacebookShareButton,
@@ -20,9 +22,18 @@ import {
 
 import CustomButton from '../custom-button/custom-button.component';
 
+import { setQuantity, addItemFromProductPage, clearQuantity } from '../../redux/cart/cart.actions';
+import { selectInputQtd } from '../../redux/cart/cart.selectors';
+
 import './product-item.styles.scss';
 
-const ProductItem = ({ itemCollection }) => {
+const ProductItem = ({ 
+    itemCollection, 
+    setQuantity, 
+    inputQtd, 
+    addItemFromProductPage, 
+    clearQuantity,
+    history }) => {
 
 const { name, price, imageUrl, 
     category, collectionRoute, tags } = itemCollection;
@@ -51,11 +62,18 @@ return (
                     <div className='quantity'>
                         <label className='t'>Quantidade:</label>
                         <input type='number'
-                        className='t qtd' min='1' max='20' />
+                        className='t qtd' min='1' max='20'
+                        value={inputQtd} 
+                        onChange={e => setQuantity(e.target.value)} />
                     </div>
                     <div className='buttons'>
-                    <CustomButton inverted>Adicionar ao Carrinho</CustomButton>
-                    <CustomButton>COMPRAR AGORA</CustomButton>
+                    <CustomButton
+                    onClick={() => {
+                        addItemFromProductPage(itemCollection)
+                        clearQuantity()
+                        history.push('/finalizar-compra')
+                    }}
+                    >COMPRAR</CustomButton>
                     </div>
                 </div>
                 <div className='divider'></div>
@@ -140,5 +158,14 @@ return (
 );
 }
 
+const mapStateToProps = createStructuredSelector({
+    inputQtd: selectInputQtd
+})
 
-export default ProductItem;
+const mapDispatchToProps = dispatch => ({
+    setQuantity: quantity => dispatch(setQuantity(quantity)),
+    addItemFromProductPage: item => dispatch(addItemFromProductPage(item)),
+    clearQuantity: () => dispatch(clearQuantity())
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ProductItem))

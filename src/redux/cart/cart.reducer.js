@@ -1,9 +1,14 @@
 import cartActionsTypes from './cart.types';
-import { addItemToCart, removeItemFromCart } from './cart.utils';
+import { addItemToCart, removeItemFromCart, addItemFromProductPage } from './cart.utils';
 
 const INITIAL_STATE = {
     hidden: true,
-    cartItems: []
+    cartItems: [],
+    setQuantity: 1
+}
+
+const resetQtd = {
+    resetQtd: 1
 }
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -30,6 +35,24 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 cartItems: state.cartItems.filter(item => item.id !== action.payload.id)
+            }
+        
+        case cartActionsTypes.CLEAR_QUANTITY:
+            return {
+                ...state,
+                inputQtd: resetQtd.resetQtd
+            } 
+        case cartActionsTypes.ADD_QUANTITY:
+            return {
+                ...state,
+                inputQtd: Number(action.payload)
+            }
+        
+        case cartActionsTypes.ADD_ITEM_FROM_PRODUCT:
+            return {
+                ...state,
+                cartItems: addItemFromProductPage(
+                    state.cartItems, action.payload, state.inputQtd)
             }
 
         default: 

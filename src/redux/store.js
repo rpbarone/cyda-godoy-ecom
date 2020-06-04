@@ -10,7 +10,7 @@ const middlewares = [logger];
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['cart']
+  whitelist: ['cart'],
 }
 
 

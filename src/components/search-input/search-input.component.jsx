@@ -29,7 +29,7 @@ class SearchInput extends React.Component {
         e.preventDefault();
 
         const { searchValue } = this.state;
-        const { itemCollection, setCurrentSearch, history, match } = this.props;
+        const { itemCollection, setCurrentSearch, history } = this.props;
 
         const itemName = itemCollection.flatMap(item => 
         Object.values(item)).map(item => item)

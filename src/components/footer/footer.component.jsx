@@ -5,7 +5,7 @@ import { ReactComponent as PhoneIcon } from '../../assets/icons/phone.svg';
 import { ReactComponent as SmartphoneIcon } from '../../assets/icons/smartphone.svg';
 import { ReactComponent as EmailIcon } from '../../assets/icons/email.svg';
 
-import SearchInput from '../../components/SearchInput/search-input.component';
+import SearchInput from '../../components/search-input/search-input.component';
 import SocialLinks from '../../components/social-links/social-links.component';
 
 import './footer.styles.scss';
