@@ -29,7 +29,7 @@ const mapStateToProps = (state, ownProps) => {
     productId = productId.match(/\w+/g).join("_");
 
     return ({
-        itemCollection: selectCollectionItems(categoryId)(productId)(state)
+        itemCollection: selectCollectionItems(categoryId)(productId)(state),
     })
 
 }

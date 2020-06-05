@@ -71,49 +71,18 @@
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 20px;
-
-                .badge {
-                    padding: 3px;
-                    margin-left: 5px;
-                    border-radius: 5px;
-                    flex-grow: 3;
-
-                    &:hover {
-                        background-color: #4B5C01;
-                    }
-                }
-            }
-
-            .socials {
-                margin-top: 30px;
-
-                .share {
-                    margin-right: 8px;
-                }
             }
         }
    
     }
-
-        .product-details {
-            margin-top: 40px;
-            
-            .menu-details {
-                display: flex;
-                padding: 3px 0;
-                border-bottom: 1px solid #e8e8e8;
-                cursor: pointer;
-
-                .title {
-                    font-size: 25px;
-                    margin-right: 80px;
-                }
-            }
-
-            .description-content {
-                padding: 20px 0;
-            }
-        }
-
    
+}
+
+.alert-success {
+    width: 350px;
+    height: 40px;
+}
+
+.related-products {
+    margin-top: 60px;
 }

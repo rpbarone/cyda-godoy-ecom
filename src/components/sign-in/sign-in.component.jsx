@@ -2,7 +2,7 @@ import React from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import AlertError from '../alert-error/alert-error.component';
+import Alert from '../alert/alert.component';
 
 import { auth, signInWithFacebook } from '../../firebase/firebase.utils';
 
@@ -72,7 +72,7 @@ class SignIn extends React.Component {
 
                     {
                         this.state.error ?
-                        <AlertError msgError='E-mail ou senha inválidos.' />
+                        <Alert status={'error'} msg='E-mail ou senha inválidos.' />
                         :
                         null
                     }

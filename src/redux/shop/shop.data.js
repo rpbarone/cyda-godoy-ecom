@@ -8,11 +8,11 @@ const SHOP_DATA = {
         id: 1,
         name: 'Banho Atrativo',
         category: 'banhos',
-        collectionRoute: '/produtos/banhos-de-ervas',
         tags: [
           '+ atração',
           '+ auto-estima'
         ],
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-atrativo',
         imageUrl: 'https://i.ibb.co/MkwxqR0/banho-atrativo.jpg',
         price: 25
@@ -21,12 +21,25 @@ const SHOP_DATA = {
         id: 2,
         name: 'Banho Energético',
         category: 'banhos',
-        collectionRoute: '/produtos/banhos-de-ervas',
         tags: [
           '+ energia',
           '+ vitalidade',
           '+ disposição'
         ],
+        description: `
+        O banho energético é feito para conseguir te oferecer mais energia,
+        disposição, e alegria em seu dia a dia. Garanta já o seu e não irá
+        se arrepender demias, pois é muito bom mesmo. Banho energético da
+        Cyda Godoy, para te deixar pronto para as atividades mais cansativas
+        do seu dia!
+        `,
+        formasdepgto: `
+        Pague em até 12x de R$120,00 sem juros!
+        `,
+        prazodeentrega: `
+        Receba em sua casa em até 20 dias úteis!
+        `,
+        collectionRoute: '/produtos/banhos-de-ervas',
         route: 'banho-energetico',
         imageUrl: 'https://i.ibb.co/NKbwdMm/banho-energetico.jpg',
         price: 25
@@ -103,6 +116,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-alegria',
         imageUrl: 'https://i.ibb.co/tYNSjXf/fitofloral-xamanico-alegria.jpg',
         price: 44
@@ -116,6 +130,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-amor',
         imageUrl: 'https://i.ibb.co/kBLs0hx/fitofloral-xamanico-amor.jpg',
         price: 44
@@ -129,6 +144,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-antialcool',
         imageUrl: 'https://i.ibb.co/N1fT7pV/fitofloral-xamanico-antialcool.jpg',
         price: 44
@@ -142,6 +158,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-antifumo',
         imageUrl: 'https://i.ibb.co/Bzr71Wy/fitofloral-xamanico-antifumo.jpg',
         price: 44
@@ -155,6 +172,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-articulacao',
         imageUrl: 'https://i.ibb.co/5TjpYfW/fitofloral-xamanico-articulacao.jpg',
         price: 44
@@ -168,6 +186,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-ativador',
         imageUrl: 'https://i.ibb.co/brP2Sjp/fitofloral-xamanico-ativador.jpg',
         price: 44
@@ -181,6 +200,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-calma',
         imageUrl: 'https://i.ibb.co/n3Nx7R5/fitofloral-xamanico-calma.jpg',
         price: 44
@@ -194,6 +214,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-clareza',
         imageUrl: 'https://i.ibb.co/HVY2pvG/fitofloral-xamanico-clareza.jpg',
         price: 44
@@ -207,6 +228,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-desapego',
         imageUrl: 'https://i.ibb.co/YkB10W5/fitofloral-xamanico-desapego.jpg',
         price: 44
@@ -220,6 +242,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-equilibrio',
         imageUrl: 'https://i.ibb.co/x5SCmqb/fitofloral-xamanico-equilibrio.jpg',
         price: 44
@@ -233,6 +256,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-foco',
         imageUrl: 'https://i.ibb.co/xD7GtRt/fitofloral-xamanico-foco.jpg',
         price: 44
@@ -246,6 +270,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-inspiracao',
         imageUrl: 'https://i.ibb.co/zxX2cxR/fitofloral-xamanico-inspiracao.jpg',
         price: 44
@@ -259,6 +284,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-limpeza-de-chackras',
         imageUrl: 'https://i.ibb.co/pWD9HyY/fitofloral-xamanico-limpeza-dos-chackras.jpg',
         price: 44
@@ -272,6 +298,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-meditação',
         imageUrl: 'https://i.ibb.co/gTCfM8p/fitofloral-xamanico-meditacao.jpg',
         price: 44
@@ -285,6 +312,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-medo',
         imageUrl: 'https://i.ibb.co/DzfHQjs/fitofloral-xamanico-medo.jpg',
         price: 44
@@ -298,6 +326,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-mudanca',
         imageUrl: 'https://i.ibb.co/1LZzm5P/fitofloral-xamanico-mudanca.jpg',
         price: 44
@@ -311,6 +340,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-relaxante',
         imageUrl: 'https://i.ibb.co/NSM0Lws/fitofloral-xamanico-relaxante.jpg',
         price: 44
@@ -324,6 +354,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-resgate-da-alma',
         imageUrl: 'https://i.ibb.co/8sZxpn7/fitofloral-xamanico-resgate-da-alma.jpg',
         price: 44
@@ -337,6 +368,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-sos',
         imageUrl: 'https://i.ibb.co/BtqvbsN/fitofloral-xamanico-sos.jpg',
         price: 44
@@ -350,6 +382,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-superacao',
         imageUrl: 'https://i.ibb.co/jLRLC0K/fitofloral-xamanico-superacao.jpg',
         price: 44
@@ -363,6 +396,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/fitoflorais',
         route: 'fitofloral-timidez',
         imageUrl: 'https://i.ibb.co/Tq5snSz/fitofloral-xamanico-timidez.jpg',
         price: 44
@@ -383,6 +417,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-abre-caminho',
         imageUrl: 'https://i.ibb.co/jyHWvQH/elixir-de-cristais-abre-caminho.jpg',
         price: 44
@@ -396,6 +431,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-afetividade',
         imageUrl: 'https://i.ibb.co/PY0ZLdM/elixir-de-cristais-afetividade.jpg',
         price: 44
@@ -409,6 +445,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-ansiedade',
         imageUrl: 'https://i.ibb.co/WvT8jg8/elixir-de-cristais-ansiedade.jpg',
         price: 44
@@ -422,6 +459,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-brilho-interior',
         imageUrl: 'https://i.ibb.co/1nTvHnS/elixir-de-cristais-brilho-interior.jpg',
         price: 44
@@ -435,6 +473,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-comunicacao',
         imageUrl: 'https://i.ibb.co/8j4df6Z/elixir-de-cristais-comunicacao.jpg',
         price: 44
@@ -448,6 +487,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-depressao',
         imageUrl: 'https://i.ibb.co/m80zxgB/elixir-de-cristais-depressao.jpg',
         price: 44
@@ -461,6 +501,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-elevacao',
         imageUrl: 'https://i.ibb.co/NL1hDQd/elixir-de-cristais-elevacao.jpg',
         price: 44
@@ -474,6 +515,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-emergencial',
         imageUrl: 'https://i.ibb.co/jy8Cf7H/elixir-de-cristais-emergencial.jpg',
         price: 44
@@ -487,6 +529,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-energia-vital',
         imageUrl: 'https://i.ibb.co/gW8SB5v/elixir-de-cristais-energia-vital.jpg',
         price: 44
@@ -500,6 +543,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-insonia',
         imageUrl: 'https://i.ibb.co/Pzf8jBT/elixir-de-cristais-insonia.jpg',
         price: 44
@@ -513,6 +557,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-organizacao',
         imageUrl: 'https://i.ibb.co/Xzt4Gry/elixir-de-cristais-organizacao.jpg',
         price: 44
@@ -526,6 +571,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-protecao',
         imageUrl: 'https://i.ibb.co/9Ghj1xL/elixir-de-cristais-protecao.jpg',
         price: 44
@@ -539,6 +585,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-purificacao',
         imageUrl: 'https://i.ibb.co/41L2WTW/elixir-de-cristais-purificacao.jpg',
         price: 44
@@ -552,6 +599,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/elixir',
         route: 'elixir-realidade',
         imageUrl: 'https://i.ibb.co/By3fyF4/elixir-de-cristais-realidade.jpg',
         price: 44
@@ -572,6 +620,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/aromatizadores',
         route: 'aromatizador-bons-fluidos',
         imageUrl: 'https://i.ibb.co/znLF01x/aromatizador-bons-fluidos.jpg',
         price: 40
@@ -585,6 +634,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/aromatizadores',
         route: 'aromatizador-citronela',
         imageUrl: 'https://i.ibb.co/xSTDttL/aromatizador-citronela.jpg',
         price: 40
@@ -598,6 +648,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/aromatizadores',
         route: 'aromatizador-prosperidade',
         imageUrl: 'https://i.ibb.co/8rNd5zs/aromatizador-prosperidade.jpg',
         price: 40
@@ -611,6 +662,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/aromatizadores',
         route: 'aromatizador-tranquilidade',
         imageUrl: 'https://i.ibb.co/PN7xJMK/aromatizador-tranquilidade.jpg',
         price: 40
@@ -631,6 +683,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-ewa',
         imageUrl: 'https://i.ibb.co/Jpkz2GF/sabonete-liquido-ewa.jpg',
         price: 28
@@ -644,6 +697,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-exu',
         imageUrl: 'https://i.ibb.co/bFffS9N/sabonete-l-quido-exu.jpg',
         price: 28
@@ -657,6 +711,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-iemanja',
         imageUrl: 'https://i.ibb.co/pbqGCzY/sabonete-liquido-iemanja.jpg',
         price: 28
@@ -670,6 +725,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-logun-ede',
         imageUrl: 'https://i.ibb.co/8mzQk9t/sabonete-liquido-logun-ede.jpg',
         price: 28
@@ -683,6 +739,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-maria-padilha',
         imageUrl: 'https://i.ibb.co/tJPgF5C/sabonete-liquido-maria-padilha.jpg',
         price: 33
@@ -696,6 +753,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-nana',
         imageUrl: 'https://i.ibb.co/wdfb20w/sabonete-liquido-nana.jpg',
         price: 28
@@ -709,6 +767,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-oba',
         imageUrl: 'https://i.ibb.co/G2Dv184/sabonete-liquido-oba.jpg',
         price: 28
@@ -722,6 +781,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-obaluae',
         imageUrl: 'https://i.ibb.co/dJNr4Jj/sabonete-liquido-obaluae.jpg',
         price: 28
@@ -735,6 +795,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-ossain',
         imageUrl: 'https://i.ibb.co/pvrgmzC/sabonete-liquido-ossain.jpg',
         price: 28
@@ -748,6 +809,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-oxaguian',
         imageUrl: 'https://i.ibb.co/mq3MdZf/sabonete-liquido-oxaguian.jpg',
         price: 28
@@ -761,6 +823,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/sabonetes',
         route: 'sabonete-oxumare',
         imageUrl: 'https://i.ibb.co/L5vx17T/sabonete-liquido-oxumare.jpg',
         price: 33
@@ -769,7 +832,7 @@ const SHOP_DATA = {
   },
   curumim: {
     id: 6,
-    title: 'fitoflorais infantis',
+    title: 'curumim fitoflorais infantis',
     routeName: 'curumim-fitoflorais-infantis',
     items: {
       fitofloral_infantil_afetividade: {
@@ -781,6 +844,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-afetividade',
         imageUrl: 'https://i.ibb.co/VtHSGKw/fitofloral-infantil-afetividade.jpg',
         price: 44
@@ -794,6 +858,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-apego',
         imageUrl: 'https://i.ibb.co/r3zNr3R/fitofloral-infantil-apego.jpg',
         price: 44
@@ -807,6 +872,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-apetite',
         imageUrl: 'https://i.ibb.co/vxS26Nj/fitofloral-infantil-apetite.jpg',
         price: 44
@@ -820,6 +886,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-aprendizado',
         imageUrl: 'https://i.ibb.co/HqPM3yh/fitofloral-infantil-aprendizado.jpg',
         price: 44
@@ -833,6 +900,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-choro',
         imageUrl: 'https://i.ibb.co/QpsXnxQ/fitofloral-infantil-choro.jpg',
         price: 44
@@ -846,6 +914,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-crescimento',
         imageUrl: 'https://i.ibb.co/T2HG10k/fitofloral-infantil-crescimento.jpg',
         price: 44
@@ -859,6 +928,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-indisposicoes-fisicas',
         imageUrl: 'https://i.ibb.co/sHxrJM6/fitofloral-infantil-indisposicoes-fisicas.jpg',
         price: 44
@@ -872,6 +942,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-medo',
         imageUrl: 'https://i.ibb.co/qg6Mpdz/fitofloral-infantil-medo.jpg',
         price: 44
@@ -885,6 +956,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-obediencia',
         imageUrl: 'https://i.ibb.co/kHstQQz/fitofloral-infantil-obediencia.jpg',
         price: 44
@@ -898,6 +970,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-obesidade',
         imageUrl: 'https://i.ibb.co/pbK6MnW/fitofloral-infantil-obesidade.jpg',
         price: 44
@@ -911,6 +984,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-protecao',
         imageUrl: 'https://i.ibb.co/TbG9j0Z/fitofloral-infantil-protecao.jpg',
         price: 44
@@ -924,6 +998,7 @@ const SHOP_DATA = {
           '+ vitalidade',
           '+ disposição'
         ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-sono',
         imageUrl: 'https://i.ibb.co/THysMw8/fitofloral-infantil-sono.jpg',
         price: 44
@@ -936,7 +1011,8 @@ const SHOP_DATA = {
           '+ energia',
           '+ vitalidade',
           '+ disposição'
-      ],
+        ],
+        collectionRoute: '/produtos/curumim-fitoflorais-infantis',
         route: 'fitofloral-infantil-sos',
         imageUrl: 'https://i.ibb.co/BCqvpQp/fitofloral-infantil-sos.jpg',
         price: 44

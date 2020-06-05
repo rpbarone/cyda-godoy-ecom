@@ -1,0 +1,33 @@
+.tab-navigation {
+  width: 100%;
+  margin-top: 40px;
+
+  .tab-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style: none;
+      justify-content: space-between;
+      cursor: pointer;
+      border-radius: 5px;
+
+      a {
+        padding: 15px;
+
+        &:first-child {
+          border-radius: 5px 5px 0 0;
+        }
+
+        &:last-child {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+  }
+
+  .tab-content {
+      padding: 15px;
+      cursor: default;
+      
+
+  }
+}

@@ -1,0 +1,9 @@
+.badge {
+  padding: 3px;
+  margin-left: 5px;
+  border-radius: 5px;
+
+  &:hover {
+      background-color: #4B5C01;
+  }
+}
