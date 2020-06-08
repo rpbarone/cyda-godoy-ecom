@@ -57,3 +57,47 @@
             
         }
 }
+
+@media screen and (max-width: 920px) {
+    .banner {
+        height: calc(455px - 45.5px);
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.45);
+
+            .content {
+                height: 100%;
+                justify-content: center;
+                background-color: transparent;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 735px) {
+    .banner {
+        height: calc(455px - 130px);
+        .overlay {
+
+            .content {
+                width: 60%;
+                padding-right: 5.8%;
+                padding-left: 3%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner {
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.55);
+            .content {
+                width: 100%;
+            }
+        }
+    }
+}
