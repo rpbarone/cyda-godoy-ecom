@@ -1,17 +1,8 @@
-.dropdown-container {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1000;
-  padding: 10px;
-  transform: translateY(-50%);
-  
-  .menu-dropdown {
+.menu-dropdown {
     width: 100%;
-    min-height: calc(100vh - 20px);
+    min-height: 100vh;
+    z-index: 1000;
     background-color: white;
-    border: 1px solid #8EAE01;
 
     .menu-header {
       width: 100%;
@@ -31,13 +22,31 @@
       .btn-close {
         font-size: 24px;
         opacity: 0.7;
-        background: none;
-        border: none;
+        background: transparent;
+        border: 0;
+        outline: 0;
         position: absolute;
-        top: 2%;
-        right: 2%;
+        top: 6%;
+        right: 6%;
         cursor: pointer;
         filter: invert(22%) sepia(88%) saturate(1918%) hue-rotate(56deg) brightness(98%) contrast(99%);
+
+
+        &:hover, &:active {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+
+        &::before {
+          content: 'fechar';
+          font-size: 13.7px;
+          position: absolute;
+          top: 30%;
+          right: 100%;
+          margin-right: 8px;
+          font-family: 'Karla', sans-serif;
+
+        }
       }
     }
   
@@ -51,22 +60,28 @@
         .contact {
           background-color: #8EAE01;
           justify-content: center;
-          width: calc(100% - 20px);
-          padding: 3%;
+          width: 100%;
+          padding: 16px;
           position: absolute;
-          bottom: 10px;
+          bottom: 0;
 
           &::before {
             content: 'Dúvidas? Entre em contato conosco por telefone ou e-mail.';
             font-size: 14px;
             color: #4B5C01;
             position: absolute;
-            top: -30px;
+            top: -45px;
+            padding: 0 5%;
+          }
+
+          &:active, &:hover {
+            border: 0;
+            outline: 0;
           }
         }
 
         .login {
-          font-size: 15px;
+          font-size: 13.5px;
         }
 
       }
@@ -79,7 +94,6 @@
       justify-content: space-between;
       width: 100%;
       height: auto;
-      padding: 5px 0;
   
       .navigation {
         height: 300px;
@@ -94,6 +108,13 @@
           width: 100%;
           text-align: center;
           margin: 0;
+
+          &:hover, &:active {
+            color: white;
+            transition: 0.2s;
+            transform: scale(1.05);
+            letter-spacing: 0.8px;
+          }
         }
       }
   
@@ -105,10 +126,29 @@
       }
     }
   }
-}
+
+  .und-effect {
+
+    &::before {
+      height: 100%;
+    }
+  }
+
 
 @media screen and (min-width: 521px) {
   .menu-login {
     display: none;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .contact {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &::before {
+      text-align: center;
+    }
   }
 }

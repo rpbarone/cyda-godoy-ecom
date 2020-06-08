@@ -9,23 +9,22 @@ import { toggleMenuHidden } from '../../redux/menu/menu.actions';
 import './menu-dropdown.styles.scss';
 
 const MenuDropdown = ({ toggleMenuHidden }) => (
-    <div className='dropdown-container'>
         <div className='menu-dropdown'>
             <div className='menu-header'>
                 <div className='logo'></div>
                 <button onClick={toggleMenuHidden} className='btn-close'>&#10005;</button>
             </div>
-            <div className='menu-login'>
-                <HeaderTopBar/>
+            <div onClick={toggleMenuHidden} className='menu-login'>
+                <HeaderTopBar  />
             </div>
-            <div className='menu-body'>
+
+            <div onClick={toggleMenuHidden} className='menu-body'>
                 <HeaderNavigation/>
                 <div onSubmit={toggleMenuHidden}>
                     <SearchInput />
                 </div>
             </div>
         </div>
-    </div>
 );
 
 const mapDispatchToProps = dispatch => ({
