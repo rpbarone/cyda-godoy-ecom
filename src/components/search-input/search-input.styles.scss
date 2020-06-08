@@ -29,3 +29,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1310px) {
+    .search {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .search {
+        width: 450px;
+    }
+
+    .slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .search {
+        display: none;
+    }
+}

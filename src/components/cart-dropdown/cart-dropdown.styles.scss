@@ -6,7 +6,7 @@
     border: 1px solid #E8E8E8;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
     border-radius: 3px;
-    right: 1.5%;
+    right: 5%;
     top: 65%;
     z-index: 5;
 
@@ -78,5 +78,26 @@
     }
   }
 
+
+  @media screen and (max-width: 735px) {
+      .cart-dropdown {
+        width: 270px;
+        height: 360px;
+        right: 5%;
+        top: 87%;
+      }
+  }
   
-  
+  @media screen and (max-width: 520px) {
+    .cart-dropdown {
+      height: 320px;
+      width: 240px;
+      right: 5%;
+      top: 54%;
+    }
+
+    .custom-button {
+      height: 40px;
+      font-size: .72rem;
+    }
+}

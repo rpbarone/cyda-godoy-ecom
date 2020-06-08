@@ -3,3 +3,18 @@
     justify-content: center;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.3)
 }
+
+@media screen and (max-width: 520px ) {
+    .ads-bar {
+        order:5;
+        background-color: #8EAE01;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .ads-bar {
+        text-align: center;
+        padding: 20px 5%;
+    }
+}

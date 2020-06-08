@@ -23,3 +23,9 @@
         @include icons;
     }
 }
+
+@media screen and (max-width: 520px) {
+    .top-bar {
+        display: none;
+    }
+}

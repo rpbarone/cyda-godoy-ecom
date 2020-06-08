@@ -4,6 +4,7 @@
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     height: 60px;
+    justify-content: center;
 
     a {
         margin: 0 40px;
@@ -12,7 +13,27 @@
         &:first-child {
             margin-left: 0;
         }
+
+        &:last-child {
+            margin: 0 0 0 40px;
+        }
     }
 
    
+}
+
+@media screen and (max-width: 900px) {
+    .navigation {
+        justify-content: space-between;
+    }
+
+    a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .navigation {
+        display: none;
+    }
 }

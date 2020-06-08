@@ -34,4 +34,62 @@
       }
     }
   }
+
+  @media screen and (max-width: 735px) {
+    .cart-item {
+      height: 55px;
+      margin-bottom: 13px;
+    }
+
+    img {
+      height: 55px;
+      width: 55px;
+    }
+
+    .item-title {
+      width: calc(100% - 55px);
+      padding-left: 9px;
+
+      .name {
+        font-size: 14.7px;
+      }
+
+      .item-details {
+        font-size: 13.2px;
+
+        .quantity {
+          padding-left: 9px;
+        }
+      }
+    }
+  }
   
+
+  @media screen and (max-width: 520px) {
+    .cart-item {
+      height: 50px;
+      margin-bottom: 11px;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+      .item-title {
+        width: calc(100% - 50px);
+        padding-left: 8px;
+
+        .name {
+          font-size: 13px;
+        }
+
+        .item-details {
+          font-size: 11.5px;
+
+          .quantity {
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+  }

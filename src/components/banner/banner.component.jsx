@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import CustomButton from '../custom-button/custom-button.component'
 import './banner.styles.scss';
 
-const Banner = ({ type, title, subtitle, description, description_2, imageUrl, scratchInfo, btnAgenda, btnOffer }) => (
+const Banner = ({ type, title, subtitle, description, 
+    description_2, imageUrl, scratchInfo, btnAgenda, btnOffer }) => (
     <div className='banner'
     style={{
         backgroundImage: `url(${ imageUrl })`

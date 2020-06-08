@@ -1,10 +1,11 @@
 .main {
     max-height: 90px;
     justify-content: space-between;
+    background-color: white;
 
     .logo-container {
         height: 75px;
-        width: 75px;
+        width: 90px;
     
         .logo {
             width: 100%;
@@ -23,4 +24,39 @@
         font-family: 'Gloria Hallelujah', cursive;
     }
     
+}
+
+.menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 735px) {
+    .main {
+        height: auto;
+    }
+    
+    .logo-container {
+        margin: 0 auto;
+        max-height: 68px;
+        max-width: 80px;
+    }
+
+    .menu {
+        display: block;
+        order: -1;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .main {
+        padding: 40px 5%;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

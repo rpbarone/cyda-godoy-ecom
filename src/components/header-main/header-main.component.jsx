@@ -6,6 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import SearchInput from '../../components/search-input/search-input.component';
+import MenuIcon from '../menu-icon/menu-icon.component';
 
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
@@ -24,9 +25,15 @@ const Header = ({ hidden }) => (
             <div className='options'>
                 <CartIcon />
             </div>
-                {
-                    hidden ? null : <CartDropdown />
-                }
+
+            {
+                hidden ? null : <CartDropdown />
+            }
+
+            <div className='menu'>
+                <MenuIcon />
+            </div>
+            
     </div>
 );
 
