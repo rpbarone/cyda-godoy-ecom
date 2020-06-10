@@ -26,7 +26,7 @@ const INITIAL_STATE = {
             linkUrl: 'produtos/elixir-de-cristais'
         },
         {
-            title: 'aromatizadores de ambiente',
+            title: 'aromatizadores',
             imageUrl: aromatizadores,
             id: 4,
             linkUrl: 'produtos/aromatizadores'

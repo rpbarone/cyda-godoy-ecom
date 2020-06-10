@@ -20,7 +20,7 @@ return (
 
         <div className='slider block'>
             
-                <Slider slideWidth={95} slideQtd={3} interval={3000}>
+                <Slider slideWidth={100} slideQtd={3} interval={3000}>
                     <CollectionItem key={collection.id} item={banhos.items.banho_sete_ervas } />
                     <CollectionItem key={collection.id} item={elixir.items.elixir_ansiedade } />
                     <CollectionItem key={collection.id} item={fitoflorais.items.fitofloral_calma } />
