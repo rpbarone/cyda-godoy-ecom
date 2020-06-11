@@ -92,18 +92,19 @@
             font-size: 21px;
           }
       }
-    }
+    }}
 
     @media screen and (max-width: 550px) {
       .menu-item {
-        width: 90%;
+        width: 80%;
+        height: 270px;
         margin: 3% 0;
       }
     }
 
     @media screen and (max-width: 480px) {
       .menu-item {
-        width: 100%;
+        width: 90%;
         margin: 3% 0;
 
         .content {
@@ -111,7 +112,7 @@
             font-size: 20px;
           }
       }
-    }
+    }}
 
     @media screen and (max-width: 400px) {
       .menu-item {
@@ -123,5 +124,3 @@
       }
     }
   }
-}
-    }
