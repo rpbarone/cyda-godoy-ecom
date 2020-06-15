@@ -49,3 +49,10 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .custom-button {    
+        &:hover, &:active {
+            box-shadow: inset 45em 0 0 0 #8EAE01;
+        }
+    }
+}
