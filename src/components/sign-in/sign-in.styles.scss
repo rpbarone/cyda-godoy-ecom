@@ -16,8 +16,20 @@
     .facebook-sign-in {
         margin-top: .675em;
     }
+    
+    .register {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 14px;
 
-    .sh {
-        margin-bottom: .475em;
+        span {
+            font-weight: 600;
+            margin-left: 1%;
+        }
+
+        &:hover {
+            color: #4B5C01;
+        }
     }
 }
+

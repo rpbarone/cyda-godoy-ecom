@@ -14,4 +14,32 @@
     .custom-button {
         width: 100%;
     }
+
+    .login {
+        margin-top: 24px;
+        font-size: 14px;
+
+        span {
+            font-weight: 600;
+            margin-left: 1%;
+        }
+
+        &:hover {
+            color: #4B5C01;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sign-up {
+        .login {
+            display: flex;
+            flex-direction: column;
+            
+            span {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+    }
 }

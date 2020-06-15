@@ -11,9 +11,9 @@ const CollectionPage = ({ collection }) => {
     
     useEffect(() => {
         window.scrollTo({
-            top: 288,
+            top: 250,
             left: 0,
-            behavior: 'smooth'
+            behavior: 'auto'
           });
       }, [])
       

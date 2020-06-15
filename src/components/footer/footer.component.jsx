@@ -39,7 +39,6 @@ const Footer = () => (
         <div className='links-uteis'>
                 <div className='sh title'>LINKS ÚTEIS</div>
                 
-                <Link className='t' to='/agenda'>Agenda</Link>
                 <Link className='t' to='/cyda-godoy'>Quem é Cyda Godoy?</Link>
                 <Link className='t' to='/politica-de-privacidade'>Políticas de Privacidade</Link>
                 <Link className='t' to='/politica-de-troca-devolucao'>Políticas de Troca e Devolução</Link>

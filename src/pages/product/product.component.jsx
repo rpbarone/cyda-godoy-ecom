@@ -13,7 +13,7 @@ const ProductPage = ({ itemCollection }) => {
         window.scrollTo({
             top: 288,
             left: 0,
-            behavior: 'smooth'
+            behavior: 'auto'
           });
       }, [])
 

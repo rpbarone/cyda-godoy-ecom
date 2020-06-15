@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
@@ -99,6 +100,9 @@ class SignUp extends React.Component {
                     />
                     <CustomButton type='submit'>Cadastrar</CustomButton>
                 </form>
+
+                <Link to='/login' className='login t'>Já possui cadastro? <span className='cta'>Clique aqui para entrar.</span></Link>
+
             </div>
         )
     }

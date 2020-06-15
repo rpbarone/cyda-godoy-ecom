@@ -62,7 +62,7 @@ class App extends React.Component {
         <Route exact path='/' component={HomePage} />
         <Route path='/produtos' component={ShopPage} />
         <Route path={`/produto/:categoryId/:productId`} component={ProductPage} />
-        <Route path={`/buscar/:searchId`} component={SearchResult} />
+        <Route path={`/buscar`} component={SearchResult} />
         <Route exact path='/finalizar-compra' component={CheckoutPage} />
         <Route exact path='/agenda' component={Agenda} />
         <Route exact path='/login' render={() => this.props.currentUser ? (
