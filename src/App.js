@@ -22,6 +22,7 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { selectMenuHidden } from './redux/menu/menu.selectors';
+import { selectCartItems } from './redux/cart/cart.selectors';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -63,12 +64,17 @@ class App extends React.Component {
         <Route path='/produtos' component={ShopPage} />
         <Route path={`/produto/:categoryId/:productId`} component={ProductPage} />
         <Route path={`/buscar`} component={SearchResult} />
-        <Route exact path='/finalizar-compra' component={CheckoutPage} />
         <Route exact path='/agenda' component={Agenda} />
         <Route exact path='/login' render={() => this.props.currentUser ? (
           <Redirect to='/' />
           ) : (
             <SignInAndSignUpPage />
+            ) } />
+        <Route exact path='/finalizar-compra' render={() => 
+        this.props.cartItems.length ? (
+          <CheckoutPage />
+          ) : (
+            <Redirect to='/' />
             ) } />
       </Switch>
       <Footer />
@@ -81,6 +87,7 @@ class App extends React.Component {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
+  cartItems: selectCartItems,
   menuHidden: selectMenuHidden
 })
 

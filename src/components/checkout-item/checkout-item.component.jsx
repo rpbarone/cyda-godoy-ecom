@@ -18,7 +18,7 @@ return(
             <div onClick={() => addItem(cartItems)} className='arrow'>&#10095;</div>
         </span>
         <span className='price t sub-color'>R${price},00</span>
-        <div onClick={() => clearItem(cartItems)} className='remove-button'>&#10005;</div>
+        <div onClick={() => clearItem(cartItems)} className='remove-button sub-color'>&#10005;</div>
     </div>
 )}
 

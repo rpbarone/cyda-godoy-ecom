@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom'
 
 import CollectionItem from '../collection-item/collection-item.component';
-import CustomButton from '../custom-button/custom-button.component';
 
 import './collection-preview.styles.scss';
 
@@ -10,7 +9,7 @@ const CollectionPreview = ({ title, routeName, items, history }) => (
     <div className='collection-preview'>
         <div onClick={() => history.push(`/produtos/${routeName}`)} className='collection-name'>
             <h1 className='title h'> { title.toUpperCase() } </h1>
-            <a className='btn-see-all t'
+            <button className='btn-see-all t'
             onClick={() => history.push(`/produtos/${routeName}`)}>
                 Ver todos os <span className='type'> {
                     title.match(/[a-z]+/) == 'curumim' ?
@@ -18,7 +17,7 @@ const CollectionPreview = ({ title, routeName, items, history }) => (
                     :
                     title.match(/[a-z]+/)
                 } &#10132;</span>
-            </a>
+            </button>
         </div>
         <div className='preview'>
             {Object.values(items)

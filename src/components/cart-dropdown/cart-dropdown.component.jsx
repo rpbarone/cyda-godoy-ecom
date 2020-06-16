@@ -37,11 +37,22 @@ const CartDropdown = ({ cartItems, history, dispatch, total, itemCount }) => (
         </div>
 
         <div className='cart-footer'>
-            <CustomButton onClick={() => {
-                history.push('/finalizar-compra');
-                dispatch(toggleCartHidden())
-            }}
-            >FINALIZAR COMPRA</CustomButton>
+            {cartItems.length ?
+                <CustomButton onClick={() => {
+                    history.push('/finalizar-compra');
+                    dispatch(toggleCartHidden())
+                }}
+                >FINALIZAR COMPRA</CustomButton>
+                
+                :
+
+                <CustomButton onClick={() => {
+                    history.push('/produtos');
+                    dispatch(toggleCartHidden());
+                }}
+                >VER PRODUTOS</CustomButton>
+
+            }
         </div>
         
     </div>
