@@ -1,5 +1,5 @@
 $error-color: #ff3232;
-$success-color: #32d296;
+$success-color: #129e1e;
 
 .alert-error {
     min-width: 165px;
@@ -58,7 +58,7 @@ $success-color: #32d296;
     }
 
     .t-success {
-        color: #32d296;
+        color: $success-color;
         margin: 0 auto;
     }
 }
